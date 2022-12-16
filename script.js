@@ -31,10 +31,14 @@ for (let i = 0; i < 256; i++) {
 
 button.addEventListener("click", () => {
   
-  const gridSize = parseInt(
-    prompt("How many rows and columns? Please Enter a number!")
+  let gridSize = parseInt(
+    prompt("How many rows and columns? Please Enter a number up till 100!")
   );
+  if (gridSize > 100) {
+    gridSize = 100;
+} 
   if (gridSize > 0) {
+   
     container.innerHTML = "";
     container.style.gridTemplateColumns = `repeat(${gridSize},8px)`;
     container.style.gridTemplateRows = `repeat(${gridSize},8px)`;
