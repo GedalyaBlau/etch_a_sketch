@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#container {
+    border: 1.5px solid black;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    display: grid;
+    grid-template-columns: repeat(256,8px);
+    grid-template-rows: repeat(512,8px);
+    width: 100vw;
+    height: 100vh;
+
+}
+.grid-item {
+   
+    border: 0px solid black;
+    
+}
+#btn {
+    padding: 8px;
+    margin: 8px;
+}
